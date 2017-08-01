@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/firstfragment"
+    tools:context="com.example.anureet.menutest.firstFragment">
+
+
+    <TextView
+        android:id="@+id/tvwp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Who paid" />
+
+    <EditText
+        android:id="@+id/etwp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvhm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvwp"
+        android:layout_alignLeft="@+id/tvwp"
+        android:layout_alignRight="@+id/tvwp"
+        android:layout_alignStart="@+id/tvwp"
+        android:layout_below="@+id/etwp"
+        android:text="how much" />
+
+    <EditText
+        android:id="@+id/ethm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etwp"
+        android:layout_alignRight="@+id/etwp"
+        android:layout_below="@+id/etwp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvfw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvhm"
+        android:layout_alignStart="@+id/tvhm"
+        android:layout_below="@+id/ethm"
+        android:layout_marginTop="28dp"
+        android:text="for whom" />
+
+    <EditText
+        android:id="@+id/etfw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ethm"
+        android:layout_alignRight="@+id/ethm"
+        android:layout_below="@+id/ethm"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvpp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvfw"
+        android:layout_alignStart="@+id/tvfw"
+        android:layout_centerVertical="true"
+        android:text="Purpose" />
+
+    <EditText
+        android:id="@+id/etpp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etfw"
+        android:layout_alignRight="@+id/etfw"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvwhen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvpp"
+        android:layout_alignStart="@+id/tvpp"
+        android:layout_below="@+id/etpp"
+        android:layout_marginTop="34dp"
+        android:text="when" />
+
+    <EditText
+        android:id="@+id/etwhen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ethm"
+        android:layout_alignStart="@+id/ethm"
+        android:layout_alignTop="@+id/tvwhen"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/Addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etwhen"
+        android:layout_alignStart="@+id/etwhen"
+        android:layout_below="@+id/etwhen"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="33dp"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+</RelativeLayout>
